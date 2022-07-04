@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,13 @@ import { ProductListComponent } from './components/ecommerce/product-list/produc
 import { ProductItemComponent } from './components/ecommerce/product-item/product-item.component';
 import { BookstoreComponent } from './pages/bookstore/bookstore.component';
 
+import ptBr from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+import { ProductComponent } from './pages/product/product.component';
+import { ProductDetailComponent } from './components/ecommerce/product-detail/product-detail.component';
+
+registerLocaleData(ptBr);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +23,17 @@ import { BookstoreComponent } from './pages/bookstore/bookstore.component';
     FooterComponent,
     ProductListComponent,
     ProductItemComponent,
-    BookstoreComponent    
+    BookstoreComponent,
+    ProductComponent,
+    ProductDetailComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: LOCALE_ID, useValue: 'pt' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
