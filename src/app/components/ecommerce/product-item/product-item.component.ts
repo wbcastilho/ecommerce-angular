@@ -13,7 +13,8 @@ export class ProductItemComponent implements OnInit {
     price: 0.00,
     quantity: 0,
     category: '',
-    img: ''
+    img: '',
+    rating: 0
   }
 
   constructor() { }

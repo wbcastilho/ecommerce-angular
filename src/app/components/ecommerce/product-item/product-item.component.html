@@ -3,8 +3,8 @@
     <div class="card-body">
         <p class="card-text">{{ product.name }}</p>
         <h5 class="card-title">{{ product.price | currency:'BRL' }}</h5>
-        <app-star></app-star>
-        <div class="btn-group">
+        <app-star [rating]="product.rating"></app-star>
+        <div class="btn-group mt-3">
             <button class="btn btn-success">Comprar</button>
             <button routerLink="/product" class="btn btn-primary">Detalhes</button>            
         </div>

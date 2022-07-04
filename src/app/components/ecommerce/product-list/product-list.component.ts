@@ -14,7 +14,8 @@ export class ProductListComponent implements OnInit {
       price: 1500.00,
       quantity: 10,
       category: 'Eletrodomésticos',
-      img: ''
+      img: '',
+      rating: 4
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ export class ProductListComponent implements OnInit {
       price: 3000.00,
       quantity: 6,
       category: 'TV',
-      img: ''
+      img: '',
+      rating: 5
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ export class ProductListComponent implements OnInit {
       price: 5000.00,
       quantity: 6,
       category: 'Eletrodomésticos',
-      img: ''
+      img: '',
+      rating: 3
     }
   ];
 
