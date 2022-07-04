@@ -13,6 +13,7 @@ import ptBr from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
 import { ProductComponent } from './pages/product/product.component';
 import { ProductDetailComponent } from './components/ecommerce/product-detail/product-detail.component';
+import { StarComponent } from './components/shared/star/star.component';
 
 registerLocaleData(ptBr);
 
@@ -25,7 +26,8 @@ registerLocaleData(ptBr);
     ProductItemComponent,
     BookstoreComponent,
     ProductComponent,
-    ProductDetailComponent    
+    ProductDetailComponent,
+    StarComponent    
   ],
   imports: [
     BrowserModule,
