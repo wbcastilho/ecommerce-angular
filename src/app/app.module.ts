@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/core/header/header.component';
 import { FooterComponent } from './components/core/footer/footer.component';
 import { ProductListComponent } from './components/ecommerce/product-list/product-list.component';
 import { ProductItemComponent } from './components/ecommerce/product-item/product-item.component';
+import { BookstoreComponent } from './pages/bookstore/bookstore.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProductItemComponent } from './components/ecommerce/product-item/produc
     HeaderComponent,
     FooterComponent,
     ProductListComponent,
-    ProductItemComponent    
+    ProductItemComponent,
+    BookstoreComponent    
   ],
   imports: [
     BrowserModule,
