@@ -10,30 +10,43 @@ export class ProductListComponent implements OnInit {
   products: Array<Product> = [
     {
       id: 1,
-      name: 'Máquina de Lavar 15Kg Electrolux',
-      price: 1500.00,
+      name: 'Drácula - Edição de Luxo',
+      price: 34.90,
       quantity: 10,
-      category: 'Eletrodomésticos',
+      category: 'Terror',
       img: '',
-      rating: 4
+      rating: 4,
+      author: 'Bram Stoker'
     },
     {
       id: 2,
-      name: 'Televisão LG 45 polegadas',
-      price: 3000.00,
+      name: 'O Senhor do Anéis - A Sociedade do Anel ',
+      price: 33.90,
       quantity: 6,
-      category: 'TV',
+      category: 'Fantasia',
       img: '',
-      rating: 5
+      rating: 5,
+      author: 'J.R.R. Tolkien'
     },
     {
       id: 3,
-      name: 'Geladeira Consul',
-      price: 5000.00,
+      name: 'Under The Dome',
+      price: 29.90,
       quantity: 6,
-      category: 'Eletrodomésticos',
+      category: 'Terror',
       img: '',
-      rating: 3
+      rating: 3,
+      author: 'Stephen King'
+    },
+    {
+      id: 4,
+      name: 'Mais Esperto que o Diabo',
+      price: 29.90,
+      quantity: 6,
+      category: 'Motivação',
+      img: '',
+      rating: 3,
+      author: 'Napoleon Hill'
     }
   ];
 
