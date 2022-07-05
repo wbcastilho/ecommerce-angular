@@ -1,15 +1,40 @@
 <section>
     <div class="container">
         <div class="row"> 
-            <div class="card col-8 mb-4">
+            <div class="card col-12 mb-4">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
+                  <div class="row">
+                    <div class="col-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="450" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text></svg>  
+
+                    </div>
+                    <div class="col-8">
+                        <h5 class="mt-5">Drácula - Edição de Luxo</h5>
+                        <span>Autor: Bram Stoker</span>
+                        <app-star [rating]="5"></app-star>
+                        <br>
+                        <small>Vendido e entregue por: Bookstore</small>
+                        <h3 class="mt-2">R$ 100,00</h3>
+                        <small><em>1x no crédito</em></small>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-flat btn-success">Comprar</button>            
+                        </div>
+                    </div>
+                  </div>
                 </div>
             </div>    
         </div>        
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card col-12 mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Descrição
+                    </h5>
+                    <p>Bram Stoker é o criador genial de uma das mais famosas e horripilantes histórias de terror de todos os tempos. Drácula é uma história de vampiros e lobisomens, de criaturas que estando mortas permanecem vivas. Baseado no folclore da Transilvânia e num personagem real (o rei Vlad, o Empalador), redigiu um relato que tem assombrado gerações consecutivas de leitores, transformando-se num mito adaptado para o cinema, quadrinhos e TV, talvez o mais significativo destes últimos dois séculos.Na história, um jovem inglês é mantido em cativeiro, à espera de um destino terrível. Longe dele, sua noiva bela e jovem é atacada por uma doença misteriosa que parece extrair o sangue de suas veias. Por trás de tudo, a força sinistra que ameaça suas vidas: Conde Drácula, o vampiro vindo do fundo dos séculos.</p>
+                </div>
+            </div>    
+        </div>
     </div>    
 </section>
