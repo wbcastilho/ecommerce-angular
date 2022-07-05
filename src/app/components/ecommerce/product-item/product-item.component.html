@@ -6,7 +6,7 @@
         <app-star [rating]="product.rating"></app-star>
         <h5 class="card-title">{{ product.price | currency:'BRL' }}</h5>
         <div class="d-grid gap-2">
-            <button routerLink="/product" class="btn btn-flat btn-outline-primary">Saiba Mais</button>            
+            <button [routerLink]="['/product', product.id]" class="btn btn-flat btn-outline-primary">Saiba Mais</button>            
         </div>
     </div>
 </div>

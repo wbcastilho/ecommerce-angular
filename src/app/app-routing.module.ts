@@ -4,8 +4,8 @@ import { BookstoreComponent } from './pages/bookstore/bookstore.component';
 import { ProductComponent } from './pages/product/product.component';
 
 const routes: Routes = [
-  { path: '', component: BookstoreComponent},
-  { path: 'product', component: ProductComponent},
+  { path: '', component: BookstoreComponent },
+  { path: 'product/:id', component: ProductComponent },
 ];
 
 @NgModule({
