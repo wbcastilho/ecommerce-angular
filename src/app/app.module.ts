@@ -15,6 +15,7 @@ import { ProductComponent } from './pages/product/product.component';
 import { ProductDetailComponent } from './components/ecommerce/product-detail/product-detail.component';
 import { StarComponent } from './components/shared/star/star.component';
 import { FilterComponent } from './components/shared/filter/filter.component';
+import { BreadcrumbComponent } from './components/core/breadcrumb/breadcrumb.component';
 
 registerLocaleData(ptBr);
 
@@ -29,7 +30,8 @@ registerLocaleData(ptBr);
     ProductComponent,
     ProductDetailComponent,
     StarComponent,
-    FilterComponent    
+    FilterComponent,
+    BreadcrumbComponent    
   ],
   imports: [
     BrowserModule,
