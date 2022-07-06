@@ -1,13 +1,15 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  apiUrl = 'https://sheet.best/api/sheets/ed652bf9-d452-404f-9918-33569ea4f715';
+  private readonly API = environment.API;
+ 
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
@@ -18,11 +20,11 @@ export class ProductService {
 
   // Retorna a lista de produtos - READ
   getProducts(): Observable<Product[]> {
-    return this.httpClient.get<Product[]>(this.apiUrl);
+    return this.httpClient.get<Product[]>(`${this.API}/products`);
   }
 
   // Lista produto unico
-  getUser(id: string): Observable<Product[]> {
-    return this.httpClient.get<Product[]>(`${this.apiUrl}/id/${id}`);
+  getProduct(id: string): Observable<Product> {
+    return this.httpClient.get<Product>(`${this.API}/product/${id}`);
   }
 }
