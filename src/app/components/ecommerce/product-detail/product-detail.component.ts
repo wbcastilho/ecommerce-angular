@@ -30,9 +30,12 @@ export class ProductDetailComponent implements OnInit {
     this.actRoute.paramMap.subscribe(params => {
       this.productId = params.get('id');
      
-      if(this.productId !== null) {
-        this.productService.getProduct(this.productId).subscribe(response => {
-          this.product = response;
+      if(this.productId !== null) {       
+        this.productService.getProduct(this.productId).subscribe({
+          next: response => {
+            this.product = response;
+          },
+          error: err => console.log('ERRO AO EXECUTAR', err)      
         });
       }
     });
