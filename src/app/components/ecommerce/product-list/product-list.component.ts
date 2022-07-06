@@ -16,7 +16,8 @@ export class ProductListComponent implements OnInit {
       category: 'Terror',
       img: '',
       rating: 4,
-      author: 'Bram Stoker'
+      author: 'Bram Stoker',
+      description: ''
     },
     {
       id: 2,
@@ -26,7 +27,8 @@ export class ProductListComponent implements OnInit {
       category: 'Fantasia',
       img: '',
       rating: 5,
-      author: 'J.R.R. Tolkien'
+      author: 'J.R.R. Tolkien',
+      description: ''
     },
     {
       id: 3,
@@ -36,7 +38,8 @@ export class ProductListComponent implements OnInit {
       category: 'Terror',
       img: '',
       rating: 3,
-      author: 'Stephen King'
+      author: 'Stephen King',
+      description: ''
     },
     {
       id: 4,
@@ -46,7 +49,8 @@ export class ProductListComponent implements OnInit {
       category: 'Motivação',
       img: '',
       rating: 3,
-      author: 'Napoleon Hill'
+      author: 'Napoleon Hill',
+      description: ''
     }
   ];
 

@@ -15,7 +15,8 @@ export class ProductItemComponent implements OnInit {
     category: '',
     img: '',
     rating: 0,
-    author: ''
+    author: '',
+    description: '',
   }
 
   constructor() { }
